@@ -24,7 +24,9 @@ At each turn, players put a card down to one of these fields:
 - Disturbance gain: Player can put only constant gain cards down here. This field is related to the scoring.
 - Noise gain: Player can put only constant gain cards down here. This field is related to the scoring.
 - Discard pile: Players can put all the 3 kinds of cards here. This field does not affect to the control performance nor scoring.
-- Plant: A stable FDLTI transfer function common to both players. Minimum-phaseness is not assured.
+
+## Plant
+The plant is a stable FDLTI system common to both players. It can be non-minimum phase.
 
 ## Bode plot
 Bode plot of the loop transfer function is shown for reference of control design.
