@@ -36,4 +36,5 @@ After 10th turn, the score of each player is calculated as an inverse of H2 norm
 You get nothing in tha case of the H2 norm is indefinit;
 - The closed loop system is unstable.
 - The generalized plant has feedthrough from the inputs to the output.
+
 Also, the feedback controller must be proper.
