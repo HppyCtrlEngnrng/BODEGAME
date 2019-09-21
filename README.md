@@ -33,7 +33,7 @@ Bode plot of the loop transfer function is shown for reference of control design
 After 10th turn, the score of each player is calculated as an inverse of H2 norm of generalized plant below.
 ![](https://github.com/HppyCtrlEngnrng/BODEGAME/blob/master/rdm_pic/genp.png)
 
-You get nothing in tha case of the H2 norm is indefinit;
+You get nothing in the case of the H2 norm is indefinit;
 - The closed loop system is unstable.
 - The generalized plant has feedthrough from the inputs to the output.
 
