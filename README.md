@@ -1,6 +1,6 @@
 # BODEGAME
 BODEGAME is a cardgame-like something for two players on MATLAB.
-* Instrument Control Toolbox is needed to create online server.
+* Instrument Control Toolbox is required to create online server.
 
 # INSTALATION
 Just download all the files to your PC.
