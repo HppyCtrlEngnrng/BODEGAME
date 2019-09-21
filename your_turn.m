@@ -36,7 +36,7 @@ function [cards, c0, c1_addr] = your_turn(hc, cards)
                     c1 = find(hc.oppcont.face == card_clicked, 1);
                     if ( checkPoleZeroCancel(cards.ownhand(c0), cards.oppcont(c1)) )
                         cards.owndisc = cards.oppcont(c1);
-                        cards.oppcont(c1) = cards.ownhand(c0);
+                        cards.oppcont(c1) = 0;
                         cards.ownhand(c0) = 0;
                         c1_addr = 7 + c1;
                         state = 2;

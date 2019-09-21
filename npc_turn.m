@@ -51,7 +51,7 @@ function cards = npc_turn(hc, cards, P)
         for c1 = 1:7
             if ( checkPoleZeroCancel(cards.opphand(c0), cards.owncont(c1)) )
                 cont_temp = cards.owncont;
-                cont_temp(c1) = cards.opphand(c0);
+                cont_temp(c1) = 0;
                 J = sp - calcScore(P, cont_temp, cards.dist, cards.noise);
                 if ( J > best_score_player )
                     best_move_player0 = c0;
@@ -84,7 +84,7 @@ function cards = npc_turn(hc, cards, P)
                 cards.opphand(best_move_cont0) = 0;
                 set(hc.oppcont.face(best_move_cont1), 'LineWidth', 4);
             case 4
-                cards.owncont(best_move_player1) = cards.opphand(best_move_player0);
+                cards.owncont(best_move_player1) = 0;
                 cards.opphand(best_move_player0) = 0;
                 set(hc.owncont.face(best_move_player1), 'LineWidth', 4);
         end 

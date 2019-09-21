@@ -5,7 +5,7 @@ function cards = drawOpponentAction(hc, cards, c0, c1_addr)
         set(hc.oppcont.face(c1), 'LineWidth', 4);
     elseif ( c1_addr <= 14 )
         c1 = c1_addr - 7;
-        cards.owncont(c1) = cards.opphand(c0);
+        cards.owncont(c1) = 0;
         set(hc.owncont.face(c1), 'LineWidth', 4);
     elseif ( c1_addr == 15 )
         cards.dist = cards.opphand(c0);
